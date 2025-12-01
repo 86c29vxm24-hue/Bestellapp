@@ -12,18 +12,7 @@
 <body onload="init()">
     <header class="hero">
      <img class="header-logo" src="./assets/Logo/Bestell App- Logo.svg" alt="BestellApp">
-<div class="burger-container"> </div>
-    <div class="burger" onclick="toggleMenu()">
-        ☰
-    </div>
 
-
-<ul id="menu" class="menu hidden">
-    <li><a href="#">Start</a></li>
-    <li><a href="#">Produkte</a></li>
-    <li><a href="#">Warenkorb</a></li>
-    
-</ul>
 </div>
 
     </header>
@@ -46,6 +35,8 @@
   <section class="basket-wraper">
     <div id="basket" class="basket">
       <h2 class="basket-header">Warenkorb</h2>
+      <button onclick="sendOrder()" class="order-btn">Bestellen</button>
+
     </div>
   </section>
 </div>
@@ -57,6 +48,8 @@
 
 <dialog id="basketDialog">
   <section id="basket-mobile" class="basket">
+    <button onclick="sendOrder()" class="order-btn">Bestellen</button>
+
 
   </section>
   <button class="close-dialog" onclick="closeBasketDialog()">Schließen</button>

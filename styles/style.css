@@ -16,48 +16,6 @@ header {
   margin-left: 20px;
 }
 
-.burger {
-    color: white;
-   position: absolute;
-   right: 20px;
-    cursor: pointer;
-    
-}
-
-.burger:hover {
-    transform: scale(1.05);
-    color: black;
-
-}
-
-.menu.hidden {
-    display: none;
-}
-
-.burger-container {
-    position: absolute;
-    right: 20px;
-    bottom: 16px;
-}
-
-.menu {
-    position: absolute;
-    top: 100%;   
-    right: 0;    
-    background: #111;
-    padding: 10px 20px;
-    list-style: none;
-    border-radius: 6px;
-}
-
-.menu li {
-    margin: 6px 0;
-}
-
-.menu li a {
-    color: white;
-    text-decoration: none;
-}
 
 .content-wrapper {
     display: flex;
@@ -287,3 +245,16 @@ footer {
     background-repeat: no-repeat;
 }
 
+.order-btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.order-btn:hover {
+    background-color: darkorange;
+}
