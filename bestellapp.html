@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestellApp</title>
+        <link rel="stylesheet" href="styles/standard.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="icon" type="image/png" href="./assets/Favicon/favicon-16x16.png">
+</head>
+<body onload="init()">
+    <header class="hero">
+     <img class="header-logo" src="./assets/Logo/Bestell App- Logo.svg" alt="BestellApp">
+<div class="burger-container"> </div>
+    <div class="burger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+
+<ul id="menu" class="menu hidden">
+    <li><a href="#">Start</a></li>
+    <li><a href="#">Produkte</a></li>
+    <li><a href="#">Warenkorb</a></li>
+    
+</ul>
+</div>
+
+    </header>
+  <main class="main">
+    <div class="restaurant-hero">
+   
+    <section class="restaurant-info">
+        <h1 class="restaurant-name">Konya Nezih Mutfagi</h1>
+        <p class="restaurant-description">Traditionelle türkische Küche in gemütlichem Ambiente.</p>
+        <p class="liefer-info">4.8 von 5 Sternen (420 Bewertungen),
+        Mindestbestellwert 15 Euro, Lieferzeit ca. 45 Min</p>
+    </section>
+    </div>
+
+
+   <div class="content-wrapper">
+  <section id="content" class="content"></section>
+
+  
+  <section class="basket-wraper">
+    <div id="basket" class="basket">
+      <h2 class="basket-header">Warenkorb</h2>
+    </div>
+  </section>
+</div>
+</main>
+<button class="cart-toggle" onclick="openBasketDialog()">
+  🧺 Warenkorb
+</button>
+
+
+<dialog id="basketDialog">
+  <section id="basket-mobile" class="basket">
+
+  </section>
+  <button class="close-dialog" onclick="closeBasketDialog()">Schließen</button>
+</dialog>
+
+
+    <footer>© 2025 BestellApp – Developer Akademie Projekt</footer>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/templates.js"></script>
+</body>
+</html>
