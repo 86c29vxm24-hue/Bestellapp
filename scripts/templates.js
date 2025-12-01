@@ -1,14 +1,12 @@
-
-
 function getDishTemplate(i) {
     let dish = myDishs[i];
 
-    return`
+    return `
     <article class="dish-card">
-    <h3>${dish.name} - ${dish.price.toFixed(2)} €</h3>
-   <p>${dish.description} </p>
-   <button onclick ="addToCart(${i})">+</button>
-   </article> `;
+        <h3>${dish.name} - ${dish.price.toFixed(2)} €</h3>
+        <p>${dish.description}</p>
+        <button onclick="addToCart(${i})">+</button>
+    </article>`;
 }
 
 function getCartItemTemplate(cartIndex) {
@@ -27,19 +25,5 @@ function getCartItemTemplate(cartIndex) {
             <span>${entry.amount}</span>
             <button onclick="changeAmount(${cartIndex}, 1)">+</button>
         </div>
-    </article>
-    `;
-}
-
-
-function changeAmount(cartIndex, delta) {
-    cart[cartIndex].amount += delta;
-
-    if (cart[cartIndex].amount <= 0) {
-        
-        cart.splice(cartIndex, 1);
-    }
-
-    localStorage.setItem("cart", JSON.stringify(cart));
-    renderCart();
+    </article>`;
 }
